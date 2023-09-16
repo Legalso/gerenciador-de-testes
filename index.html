@@ -7,20 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Roteiro de testes</h1>
-        <div id="contadorDeBugs"></div>
-            <p>BUGS:</p>
-            <div id="numeroDeBugs">
-                0
-                <button>
-                    +
-                </button>
-            </div>
-            <div id="dataEprazo"></div>
-    </header>
-    <aside>
-        <h2>Menu</h2>
+    <nav>
+        <!-- Menu de Navegação principal -->
+        <span>Navegação (nav)</span>
         <div id="ambientes">
             <h3>Ambiente</h3>
             <li><a href="">QA</a></li>
@@ -28,6 +17,7 @@
             <li><a href="">DEV</a></li>
         </div>
         <div id="selecaoDeRoles">
+            <h3>Roles</h3>
             <li><a href="">ADMIN</a></li>
             <li><a href="">BUYER</a></li>
             <li><a href="">MANAGER</a></li>
@@ -36,7 +26,33 @@
             <li><a href="">VENDOR</a></li>
             <li><a href="">OPERATOR</a></li>
         </div>
+    </nav>
+
+    <header>
+        <!-- Cabeçalho -->
+        <span>Cabeçalho (header)</span>
+        <div id="contadorDeBugs"></div>
+            <p>BUGS:</p>
+            <div id="numeroDeBugs">
+                <div>
+                    <span>0</span>
+                    <button>
+                        +
+                    </button>
+                </div>
+        </div>
+        <div id="dataEprazo"></div>
+    </header>
+
+    <section>
+        <!-- Seção principal -->
+        <span>Tarefas</span>
+    </section>
+    <aside>
+        <!-- Caixa lateral -->
     </aside>
-    <div id="content"></div>
+    <footer>
+        <!-- Rodapé -->
+    </footer>
 </body>
 </html>
