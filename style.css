@@ -1,0 +1,85 @@
+body {
+    background-color: #333333; /* Cor de fundo principal em modo escuro */
+}
+
+#content {
+    background-color: #FFFFFF; /* Cor de fundo do conteúdo */
+    min-height: 100vh; /* Altura mínima igual à altura da janela do navegador */
+}
+
+/* Estilizando o cabeçalho */
+
+header {
+    margin: 0; /* Remover margem superior */
+    background-color: #252520; /* Alterado para a cor 25252 */
+    color: #EEF22C;
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno vertical reduzido */
+    height: 60px; /* Altura do cabeçalho reduzida */
+}
+
+
+#contadorDeBugs {
+    display: inline-flex; /* Alterado para display flex */
+    align-items: center; /* Centralizar verticalmente */
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 20px; /* Definir uma altura para o contador de bugs */
+}
+
+
+/* Estilizando o botão de incrementar o contador de bugs */
+#numeroDeBugs button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px; /* Espaçamento à esquerda do botão */
+}
+
+#dataEprazo {
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilizando o menu */
+
+aside {
+    background-color: #008080; /* Alterado para a cor 25252 */
+    color: #EEF22C;
+    padding: 10px;
+    width: 200px;
+    height: 100vh; /* Altura máxima do menu igual à altura da janela do navegador */
+    overflow-y: auto; /* Adicionando barra de rolagem vertical quando necessário */
+}
+
+#ambientes h3,
+#selecaoDeRoles h3 {
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 0; /* Remover margem superior padrão */
+    padding-top: 0; /* Remover espaçamento interno superior */
+}
+
+#ambientes li,
+#selecaoDeRoles li {
+    list-style: none; /* Remover marcadores de lista */
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+}
+
+#ambientes a,
+#selecaoDeRoles a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #EEF22C; /* Cor do texto nos links */
+    display: block; /* Fazer os links ocuparem toda a largura do contêiner */
+    padding: 5px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+#ambientes a:hover,
+#selecaoDeRoles a:hover {
+    background-color: #5C1E56; /* Cor de fundo ao passar o mouse sobre os links */
+}
