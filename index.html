@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciador de testes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <!-- Menu de Navegação principal -->
-        <span>Navegação (nav)</span>
+      <!-- Menu de Navegação principal -->
+      <div class="title"><b>ROTEIRO DE TESTES</b></div>
+      <div class="infos">
         <div id="ambientes">
-            <h3>Ambiente</h3>
-            <li><a href="">QA</a></li>
-            <li><a href="">PROD</a></li>
-            <li><a href="">DEV</a></li>
+          <h3 id="ambienteTexto">Ambiente</h3>
+          <select name="selectAmbiente" id="selectAmbiente">
+            <option value="[0]">QA</option>
+            <option value="[1]">PROD</option>
+            <option value="[2]">DEV</option>
+          </select>
         </div>
         <div id="selecaoDeRoles">
-            <h3>Roles</h3>
-            <li><a href="">ADMIN</a></li>
-            <li><a href="">BUYER</a></li>
-            <li><a href="">MANAGER</a></li>
-            <li><a href="">AGENT</a></li>
-            <li><a href="">EXTERNAL</a></li>
-            <li><a href="">VENDOR</a></li>
-            <li><a href="">OPERATOR</a></li>
-            <li><a href="">ADMIN OPERATOR</a></li>
-            <li><a href="">MANAGER OPERATOR</a></li>
-            <li><a href="">LOGISTICS</a></li>
+          <h3>Roles</h3>
+          <li><a href="">ADMIN</a></li>
+          <li><a href="">BUYER</a></li>
+          <li><a href="">MANAGER</a></li>
+          <li><a href="">AGENT</a></li>
+          <li><a href="">EXTERNAL</a></li>
+          <li><a href="">VENDOR</a></li>
+          <li><a href="">OPERATOR</a></li>
+          <li><a href="">ADM OPERATOR</a></li>
+          <li><a href="">MAN OPERATOR</a></li>
+          <li><a href="">LOGISTICS</a></li>
         </div>
+        <button>Finalizar</button>
+      </div>
     </nav>
     <header>
-        <!-- Cabeçalho -->
-        <span>TESTANDO (ADM) EM (QA)</span>
-        <div id="contadorDeBugs"></div>
-            <p>BUGS:</p>
-            <div id="numeroDeBugs">
-                <div>
-                    <span>0</span>
-                    <button>
-                        +
-                    </button>
-                </div>
+      <!-- Cabeçalho -->
+      <span>TESTANDO (ADM) EM (QA)</span>
+      <div id="contadorDeBugs"></div>
+      <p>BUGS:</p>
+      <div id="numeroDeBugs">
+        <div>
+          <span>0</span>
+          <button>+</button>
         </div>
-        <div id="dataEprazo">
-            <p>Data: </p>
-            <p>Prazo: </p>
-        </div>
+      </div>
+      <div id="dataEprazo">
+        <p>Data:</p>
+        <p>Prazo:</p>
+      </div>
     </header>
     <section>
-        <!-- Seção principal -->
-        <div class="caixaTarefas">
-            <a>+</a>
-            <div class="caixaTarefasTitulo">
-                <p>Tarefa</p>
-            </div>
-            <div class="caixaTarefasDescricao">
-                <p>Descrição</p>
-            </div>
+      <!-- Seção principal -->
+      <div class="caixaTarefas">
+        <a>+</a>
+        <div class="caixaTarefasTitulo">
+          <p>Tarefa</p>
         </div>
+        <div class="caixaTarefasDescricao">
+          <p>Descrição</p>
+        </div>
+      </div>
     </section>
     <aside>
-        <!-- Caixa lateral -->
+      <!-- Caixa lateral -->
     </aside>
     <footer>
-        <!-- Rodapé -->
-        <p>Made by Caio Patriota, for personal use only.</p>
+      <!-- Rodapé -->
+      <p>Made by Caio Patriota, for personal use only.</p>
     </footer>
-</body>
+  </body>
 </html>
