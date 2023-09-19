@@ -9,9 +9,19 @@ body {
   margin: 0;
 }
 
+.accordion-body {
+  color: black;
+}
+
+/* .accordion {
+  display: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+} */
+
 .section {
   position: absolute;
-  top: 200px;
+  top: 200px; /* aqui nessa parte ele deixa a seção fixa na tela */
   left: 250px;
   color: white;
 }
