@@ -23,6 +23,11 @@ body {
 
 }
 
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #eb1f1f;
+}
+
 .accordion-body {
   color: black;
 }
