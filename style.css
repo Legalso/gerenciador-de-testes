@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 body {
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Barlow", sans-serif;
   display: grid;
   grid-template-columns: 250px auto;
   background-color: #333333;
@@ -11,21 +13,20 @@ body {
   margin: 0 auto;
 }
 
-.accordion{
+.accordion {
   width: 800%;
   margin-left: 130%;
   margin-bottom: 20%;
 }
 
 .accordion-button {
-  background-color: black; /* Define a cor de fundo para preto */
-  color: white; /* Define a cor do texto para branco (ou a cor desejada) */
-
+  background-color: black;
+  color: white;
 }
 
 .accordion-button:not(.collapsed) {
   color: #0c63e4;
-  background-color: #eb1f1f;
+  background-color: white;
 }
 
 .accordion-body {
@@ -101,6 +102,10 @@ nav .title {
   align-items: center;
 }
 
+#selectAmbiente:hover {
+  cursor: pointer;
+}
+
 #selectAmbiente {
   border-radius: 0;
   width: 135%;
@@ -135,11 +140,12 @@ nav .title {
 
 #selecaoDeRoles a {
   background-color: #1e375c;
+  color: yellow;
   text-decoration: none;
   text-align: center;
   width: 70%;
   padding: 3% 0 3% 0;
-  text-shadow: 0px 0px 2px yellow;
+  text-shadow: 0px 0px 2px black;
 }
 
 #selecaoDeRoles a:visited {
@@ -150,6 +156,11 @@ nav .title {
 #ambientes a:hover,
 #selecaoDeRoles a:hover {
   background-color: #5c1e56;
+}
+
+#selecaoDeRoles li,
+.ElAmbiente {
+  cursor: pointer;
 }
 
 #botãoDeFinalizar {
@@ -173,4 +184,11 @@ nav .title {
 
 #botãoDeFinalizar:active {
   background-color: rgb(255, 3, 3);
+}
+
+.notCopied {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }

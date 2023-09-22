@@ -17,37 +17,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="notCopied">
       <!-- Menu de Navegação principal -->
       <div class="title"><b>GERENCIADOR DE TESTES</b></div>
       <div class="infos">
         <div id="ambientes">
           <h3 id="ambienteTexto">Ambiente</h3>
           <select name="selectAmbiente" id="selectAmbiente">
-            <option value="[0]">QA</option>
-            <option value="[1]">PROD</option>
-            <option value="[2]">DEV</option>
+            <option class="ElAmbiente" value="1">QA</option>
+            <option class="ElAmbiente" value="2">PROD</option>
+            <option class="ElAmbiente" value="3">DEV</option>
           </select>
         </div>
         <div id="selecaoDeRoles">
           <h3>Roles</h3>
-          <li><a href="1">ADMIN</a></li>
-          <li><a href="2">BUYER</a></li>
-          <li><a href="3">MANAGER</a></li>
-          <li><a href="4">AGENT</a></li>
-          <li><a href="5">EXTERNAL</a></li>
-          <li><a href="6">VENDOR</a></li>
-          <li><a href="7">OPERATOR</a></li>
-          <li><a href="8">ADM OPERATOR</a></li>
-          <li><a href="9">MAN OPERATOR</a></li>
-          <li><a href="10">LOGISTICS</a></li>
+          <li class="seletor" value="1" id="1"><a>ADMIN</a></li>
+          <li class="seletor" value="1" id="2"><a>BUYER</a></li>
+          <li class="seletor" value="1" id="3"><a>MANAGER</a></li>
+          <li class="seletor" value="1" id="4"><a>AGENT</a></li>
+          <li class="seletor" value="1" id="5"><a>EXTERNAL</a></li>
+          <li class="seletor" value="1" id="6"><a>VENDOR</a></li>
+          <li class="seletor" value="1" id="7"><a>OPERATOR</a></li>
+          <li class="seletor" value="1" id="8"><a>ADM OPERATOR</a></li>
+          <li class="seletor" value="1" id="9"><a>MAN OPERATOR</a></li>
+          <li class="seletor" value="1" id="10"><a>LOGISTICS</a></li>
         </div>
         <button id="botãoDeFinalizar">FINALIZAR</button>
       </div>
     </nav>
     <header>
       <!-- Cabeçalho -->
-      <span>TESTANDO (ADM) EM (QA)</span>
+      <span class="notCopied" id="titulo">TESTANDO ADMIN EM QA</span>
       <div id="contadorDeBugs"></div>
       <p>BUGS:</p>
       <div id="numeroDeBugs">
@@ -65,59 +65,61 @@
       <!-- Seção principal -->
 
       <!-- Primeiro acordeão -->
-        <div class="accordion" id="myAccordion1">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Menu 1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#myAccordion1"
+      <div class="accordion" id="myAccordion1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-              <div class="accordion-body">
-                <p>Tarefa 1<br>Tarefa 2</p>
-              </div>
+              Menu 1
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#myAccordion1"
+          >
+            <div class="accordion-body">
+              <p>Tarefa 1<br />Tarefa 2</p>
             </div>
           </div>
         </div>
-        <!-- Segundo acordeão -->
-        <div class="accordion" id="myAccordion2">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-              class="accordion-button" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#collapseTwo" 
-              aria-expanded="false" 
-              aria-controls="collapseTwo">
-                Menu 2
-              </button>
-            </h2>
-            <div
-            id="collapseTwo" 
-            class="accordion-collapse collapse" 
-            aria-labelledby="headingTwo" 
-            data-bs-parent="#myAccordion2">
-              <div class="accordion-body">
-                <p>Tarefa 1<br>Tarefa 2</p>
-              </div>
+      </div>
+      <!-- Segundo acordeão -->
+      <div class="accordion" id="myAccordion2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Menu 2
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#myAccordion2"
+          >
+            <div class="accordion-body">
+              <p>Tarefa 1<br />Tarefa 2</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- <div class="accordion" id="accordionExample">
+      <!-- <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -155,16 +157,10 @@
             </div>
           </div>
         </div> -->
-
-
-
-        
     </section>
 
-
-
-      <!-- final da section -->
-      <!-- <h2>Exemplo de Sanfona 2</h2>
+    <!-- final da section -->
+    <!-- <h2>Exemplo de Sanfona 2</h2>
       Botão para expandir/recolher a div
       <button onclick="toggleAccordiona()">
         Clique para Expandir/Recolher
